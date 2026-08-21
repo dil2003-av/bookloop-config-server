@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/bookloop_user_db?createDatabaseIfNotExist=true
-    username: root
-    password: Ijse@1234
+    url: jdbc:mysql://34.142.152.151:3306/bookloop_mysql?useSSL=false&allowPublicKeyRetrieval=true
+    username: devuser
+    password: App@1234
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
