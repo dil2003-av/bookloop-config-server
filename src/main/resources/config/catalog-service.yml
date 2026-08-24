@@ -6,7 +6,7 @@ spring:
     name: catalog-service
   data:
     mongodb:
-      uri: mongodb+srv://kaushalyadilmiav2003_db_user:sHWqKCG0WzJ2plmG@cluster0.hqgdgvh.mongodb.net/bookloop_catalog_db?retryWrites=true&w=majority
+      uri: mongodb+srv://kaushalyadilmiav2003_db_user:Ijse%401234@bookloop-catlog.sxvqwla.mongodb.net/bookloop_db?retryWrites=true&w=majority&appName=bookloop-catlog
 
 eureka:
   client:
