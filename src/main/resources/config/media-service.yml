@@ -36,3 +36,30 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+#server:
+#  port: 8083sudo systemctl status mysql
+#
+#spring:
+#  application:
+#    name: media-service
+#  servlet:
+#    multipart:
+#      max-file-size: 5MB
+#      max-request-size: 5MB
+#  cloud:
+#    gcp:
+#      credentials:
+#        location: classpath:gcp-key.json
+#      project-id: project-fb5ef45c-cd3d-4991-92d
+#
+#gcp:
+#  bucket:
+#    name: bookloop-media-bucket
+#
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
