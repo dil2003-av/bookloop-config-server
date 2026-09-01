@@ -9,7 +9,7 @@ spring:
         add-to-simple-url-handler-mapping: true
         cors-configurations:
           '[/**]':
-            allowedOrigins: "*"
+            allowedOriginPatterns: "*"
             allowedMethods:
               - GET
               - POST
@@ -17,22 +17,29 @@ spring:
               - DELETE
               - OPTIONS
             allowedHeaders: "*"
+            allowCredentials: true
 
       routes:
         - id: user-service
           uri: lb://USER-SERVICE
           predicates:
             - Path=/api/users/**, /api/requests/**
+          filters:
+            - StripPrefix=1
 
         - id: catalog-service
           uri: lb://CATALOG-SERVICE
           predicates:
             - Path=/api/books/**
+          filters:
+            - StripPrefix=1
 
         - id: media-service
           uri: lb://MEDIA-SERVICE
           predicates:
             - Path=/api/media/**
+          filters:
+            - StripPrefix=1
 
 server:
   port: 8080
